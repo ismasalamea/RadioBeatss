@@ -412,18 +412,17 @@ body {
     <h1>Sin conexión a Internet</h1>
     <img src="js/no-wifi.png" alt="Imagen de conexión perdida" style="width: 100px; height: auto;">
     <!-- Puedes personalizar este mensaje como desees -->
-</div>
+    </div>
 
-
-
-
-    <video autoplay muted loop id="video-background" preload="auto">
+<!-- PERSONALIZAR EL FONDO DE LA PAGINA WEB -->
+    <video autoplay muted loop id="video-background" preload="auto" width="100%" height="100%">
         <source src="js/fondo2.mp4" type="video/mp4">
         <!-- Agrega formatos adicionales del video aquí si es necesario -->
         Tu navegador no soporta el elemento de video.
       </video>
 
 
+<!--  CONTADOR DE VISITAS    -->
      
       <div id="contador">
         <a href="https://www.contadorvisitasgratis.com" title="gadgets contador de visitas">
@@ -433,32 +432,27 @@ body {
         </a>
     </div>
     
+<!--  LUNA RADIO   -->
 
-    <div id="lunaradio">
-        
-        </div>
+    <div id="lunaradio"> </div>
     </div>
 
     <!-- Agrega esto al final del body de tu HTML -->
-<div id="notification" style="display: none;">
-    <p>¡Estás escuchando Beatss Radio¡¡</p>
-</div>
+    <div id="notification" style="display: none;">
+        <p>¡Estás escuchando Beatss Radio¡¡</p>
+    </div>
     
-
     <div id="chat-btn">
         <i class="fas fa-comments"></i>
     </div>
-
     <div id="chat-modal">
         <div class="modal-close-btn" onclick="closeChatModal()">&times;</div>
         <div id="chat-container">
             <h2>Chat en Vivo 💬</h2>
-            <div id="chat-messages"></div>
-            
+            <div id="chat-messages"></div>  
             <div id="chat-input-container">
                 <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
                 <button id="send-chat-btn" onclick="sendMessage()">Enviar</button>
-                
             </div>
         </div>
         
@@ -651,14 +645,14 @@ body {
             fontname: "Courier",
             googlefont: "Anton&display=swap",
             fontratio: "0.5",
-            radioname: ".:: BEATSS RADIO ::.",
+            radioname: "",
             scroll: "true",
             coverimage: "js/logo3.png",
             onlycoverimage: "False",
             coverstyle: "animated",
             usevisualizer: "real",
-            visualizertype: "1",
-            metadatatechnic: "",
+            visualizertype: "8",
+            metadatatechnic: "fallback",
             ownmetadataurl: "",
             streamurl: "https://stream.zeno.fm/gxnj8121nuduv?",
             streamtype: "radiozeno",
@@ -672,9 +666,9 @@ body {
             radiocoid: "",
             itunestoken: "1000lIPN",
             metadatainterval: "15000",
-            volume: "50",
+            volume: "100",
             debug: "false",
-            autoplay: "true"
+            autoplay: "false"
         });
 
         $("#comment-btn").click(function () {
